@@ -5,7 +5,7 @@
 
 `Minesweeper.py`と`TestMinesweeper.py`は確認
 
-## コマンドラインでプレイ
+## ターミナルでプレイ
 ```
 python Minesweeper.py (爆弾の数)
 ```

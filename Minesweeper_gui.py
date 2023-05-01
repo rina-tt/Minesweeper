@@ -197,7 +197,7 @@ class MinesweeperWindow(QMainWindow):
     
     def initUI(self):
         """ UIの初期化 """        
-        self.resize(100, 100) 
+        self.resize(500, 500) 
         self.setWindowTitle('Minesweeper')
         
         # ★以下，コードを追加★
@@ -233,16 +233,17 @@ class MinesweeperWindow(QMainWindow):
                     self.button[y][x].setText("x")
                     self.button[y][x].setIcon(QIcon(None))
                 elif self.game.game_board[y][x] == OPEN:
-                    self.button[y][x].set_bg_color("blue")
+                    self.button[y][x].set_bg_color("green")
                     self.button[y][x].setIcon(QIcon(None))
                     num = self.game.mine_map[y][x]
                     if num == 0:
                         self.button[y][x].setText(" ")
                     else:
                         self.button[y][x].setText(str(num))
+                        self.button[y][x].setFont(QFont("Times", 12, QFont.Bold))
                     #空きセルが爆弾の時
                     if self.game.mine_map[y][x] == -1:
-                        self.button[y][x].set_bg_color("blue")
+                        self.button[y][x].set_bg_color("green")
                         self.button[y][x].setIcon(QIcon('bomb.png'))
                         self.button[y][x].setText(" ")
 

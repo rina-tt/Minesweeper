@@ -3,14 +3,14 @@
 
 Minesweeper created for a class assignment.
 
-## CUIでプレイ（C言語）
+## CLIでプレイ（C言語）
 2019/12 作成
 ```
 gcc Minesweeper.c
 ./a.out
 ```
 
-## CUIでプレイ（Python）
+## CLIでプレイ（Python）
 2021/10 作成
 ```
 python Minesweeper.py (爆弾の数)
